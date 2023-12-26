@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 
 
 import LanguageSwitch from "./LanguageSwitch";
@@ -30,7 +30,7 @@ const CustomNavLink = ({ link, children, linkEn, activeSection }) => {
   };
 
 const Header = () => {
-    const [toggle, setToggle] = useState(false);
+    // const [toggle, setToggle] = useState(false);
 
     const { language } = useLanguage();
 
@@ -71,7 +71,7 @@ const Header = () => {
           <ThemeSwitcher/>
       </div>
         {/* Mobile Nav */}
-        <nav
+        {/* <nav
           className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
         >
           <ul className="flex flex-col">
@@ -91,7 +91,7 @@ const Header = () => {
               <a href="/#resume">Resume</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         
         </div>
         </div>
