@@ -27,7 +27,7 @@ const Contact = () => {
       console.error('Error sending email:', error);
     }
   };
-  const { title, description, inputfields, textarea, button } = contactData;
+  const { title, description, inputfields, textarea } = contactData;
   return (
     <section id="contact" className="relative bg-primary dark:bg-gray-500 text-white px-5 pt-20 md:pt-22 dark:bg-gray-500 ">
      <div className="container mx-auto ">
