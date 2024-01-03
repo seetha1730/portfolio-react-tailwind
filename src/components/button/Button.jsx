@@ -2,12 +2,12 @@ import React from 'react';
 
 
 function Button({
-  onClick,
+ 
   label,
   link,
   buttoncolor,
   buttonhovercolor,
-  type,
+
   iconSVG: IconSVGComponent,
 
 }) {

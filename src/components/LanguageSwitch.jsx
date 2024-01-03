@@ -8,9 +8,8 @@ const LanguageSwitch = () => {
     return (
         <>
 
-
             <label className="flex mr-3 items-center relative w-max cursor-pointer select-none" data-tg-off={buttonLabels.language.nl}
-            
+
                 data-tg-on={buttonLabels.language.en}>
 
                 <span className="text-lg font-bold mr-3"></span>
@@ -24,7 +23,7 @@ const LanguageSwitch = () => {
                 <span className="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200" />
             </label>
 
-        
+
 
 
         </>

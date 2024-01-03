@@ -10,7 +10,7 @@ const Footer = () => {
      <a href="https://github.com/seetha1730">
         <FiGithub className="dark:text-white text-gray-200" />
       </a>
-      <a href="seetha.dev">
+      <a href="https://seetha.dev">
         <FiLink className="dark:text-white text-gray-200" />
       </a>
       <a href="https://www.linkedin.com/in/seetha-lakshmi-19a00b53/">

@@ -27,14 +27,14 @@ const Contact = () => {
       console.error('Error sending email:', error);
     }
   };
-  const { title, description, inputfields, textarea } = contactData;
+  const { title, description, inputfields, textarea ,button} = contactData;
   return (
-    <section id="contact" className="relative bg-primary dark:bg-gray-500 text-white px-5 pt-20 md:pt-22 dark:bg-gray-500 ">
+    <section id="contact" className="relative bg-primary dark:bg-gray-500 text-white px-5  pt-20 md:pt-22 dark:bg-gray-500 ">
      <div className="container mx-auto ">
      <h2 className="container font-bold mb-5 w-full text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50 dark:text-white "> {language === "en" ? title.en : title.nl} </h2>
      </div> 
 
-      <div className=" container p-5 mx-auto w-full md:flex sm:flex-nowrap">
+      <div className=" container p-5 mb-10 mx-auto w-full md:flex sm:flex-nowrap">
 
         <div className=" w-full lg:w-2/4 bg-gray-900 rounded-lg overflow-hidden lg:mr-5 p-10 flex items-end justify-start relative">
 
@@ -110,9 +110,9 @@ const Contact = () => {
 
 
           <button
-            type="submit"
-            className="text-white dark:bg-gray-800 bg-[#13B8AA] border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded text-lg">
-            Submit
+            type="submit" 
+            className="text-white dark:bg-gray-800 bg-gradient-to-r from-teal-500 to-cyan-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded text-lg">
+           {language === "en" ? button.value.en : button.value.nl}
           </button>
         </form>
       </div>

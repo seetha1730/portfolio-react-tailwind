@@ -38,11 +38,11 @@ a{color:black}
   font-size:15px
  }
  .projects .slick-slider.slick-initialized{
-   width:80%;
-   background: rgba(0, 0, 0, 0.1);
-   border-radius:12px
+   width:90%;
+   background: #1ABAA91a;
+      border-radius:12px
  }
-
+ .projects  .slick-dots{margin-bottom:40px}
 input:checked ~ span:last-child {
   --tw-translate-x: 1.75rem; /* translate-x-7 */
 }
@@ -52,7 +52,14 @@ input:checked ~ span:last-child {
   }
   .projects .slick-prev{left:-2%}
 .projects .slick-next{right:-2%}
-
+.slick-slide img{width:100%}
 .projects .slick-prev:before{margin-left:-15px;font-size: 35px;}
 .projects .slick-next:before{margin-right:-15px;font-size: 35px;}
+}
+@media only screen and (max-width: 767px) {
+.button-container{
+  flex-direction: column;
+  margin: 0;
+}
+
 }

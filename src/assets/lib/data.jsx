@@ -29,7 +29,7 @@ import posImage from "../../assets/img/pos.png"
 import chickEggimage from "../../assets/img/chick-egg.png"
 import quizImage from "../../assets/img/Interactive-quiz.png"
 import portfolioImage from "../../assets/img/Interactive-quiz.png"
-
+import asian4fc from "../../assets/img/asian4fc.png"
 export const headerIntroData = {
   title: {
     nl: "Hi, Ik ben Seetha Lakshmi",
@@ -149,8 +149,9 @@ export const projectsData = [
             en: "Live",
           },
           icon: FiLink,
+          link:"https://seetha.dev/",
           color: "bg-gradient-to-r from-teal-500 to-cyan-500",
-        link:"seetha.dev"
+        
         },
         {
           name: "Demo",
@@ -245,6 +246,66 @@ export const projectsData = [
         link:"https://github.com/seetha1730/Chic-Eggs.git",
         color: "bg-gray-900 text-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0",
       },
+    ]
+
+  },
+  {
+    title_EN: "Grocery store woo-commerce",
+    title:"Supermarkt woo-commerce",
+    description:
+      "Ik heb een online retailplatform voor Indiase boodschappen gemaakt met behulp van WordPress en WooCommerce. De verantwoordelijkheden omvatten het beheren van bestellingen, voorraad en het bezorgsysteem, waardoor een naadloze en efficiënte bedrijfsvoering werd gewaarborgd.",
+    description_EN:
+      "I created an online retail platform for Indian groceries using WordPress and WooCommerce. Responsibilities included managing orders, stock, and the delivery system, ensuring a seamless and efficient business operation.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "woocommerce", icon: woocommerceicon },
+      { name: "wordpress", icon: wordpressicon },
+     
+    ],
+    image:asian4fc,
+    buttons: [
+      {
+        name: "Live",
+        label: {
+          nl: "Live url",
+          en: "Live",
+        },
+        icon: FiLink,
+        color: "bg-gradient-to-r from-teal-500 to-cyan-500",
+      link:"http://asian4fc.com/"
+      },
+      
+    ]
+
+  },
+  {
+    title_EN: "GSK-sensodyne",
+    title:"",
+    description:
+      "Ik heb een online retailplatform voor Indiase boodschappen gemaakt met behulp van WordPress en WooCommerce. De verantwoordelijkheden omvatten het beheren van bestellingen, voorraad en het bezorgsysteem, waardoor een naadloze en efficiënte bedrijfsvoering werd gewaarborgd.",
+    description_EN:
+      "I created an online retail platform for Indian groceries using WordPress and WooCommerce. Responsibilities included managing orders, stock, and the delivery system, ensuring a seamless and efficient business operation.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "woocommerce", icon: woocommerceicon },
+      { name: "wordpress", icon: wordpressicon },
+     
+    ],
+    image:asian4fc,
+    buttons: [
+      {
+        name: "Live",
+        label: {
+          nl: "Live url",
+          en: "Live",
+        },
+        icon: FiLink,
+        color: "bg-gradient-to-r from-teal-500 to-cyan-500",
+      link:"http://asian4fc.com/"
+      },
+      
     ]
 
   },
@@ -401,7 +462,7 @@ export const navLinks = [
   { nl: "Projecten", en: "Projects", hash: "projects"},
   { nl: "Over mij", en: "About me", hash: "about-me" },
   { nl: "Contact", en: "Contact", hash: "contact" },
-  { nl: "CV", en: "Resume", hash: "cv" },
+  // { nl: "CV", en: "Resume", hash: "SeethaLakhsmi-FE-2024.pdf" },
 
 ] 
 
@@ -410,7 +471,7 @@ export const navLinks = [
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/seetha/",
+    link: "https://www.linkedin.com/in/seetha-lakshmi-19a00b53/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
