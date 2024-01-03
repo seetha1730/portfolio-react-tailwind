@@ -20,7 +20,6 @@ function App() {
       <Skills/>
       <About />
       <Projects />
-  
       <Contact />
       <Footer />
       </LanguageContextProvider>

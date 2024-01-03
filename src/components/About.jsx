@@ -1,32 +1,33 @@
 import React from "react";
- import myimage from "./../assets/IMG.jpg";
-
+ import aboutImage from "./../assets/img/about.jpeg";
+import { aboutMeData } from "../assets/lib/data";
+import { useLanguage } from "../context/lang-context";
 const About = () => {
+
+  const { language } = useLanguage();
     return (
-      <section className="bg-secondery text-white px-5 py-32" id="about-me">
+
+      <section className="bg-secondery text-white px-5 dark:bg-gray-500  pt-20 md:pt-22" id="about-me">
         <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
           <div className="about-info">
-            <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
-              About Me
-            </h2>
-            <p className="pb-5">
-              Hi, My Name Is Seetha Lakshmi everyone calls me Amrin. I am a
-              Frontend Developer. I build beautifull websites with React and
-              Tailwind CSS.
-            </p>
-            <p className="pb-5">
-              I am proficient in Frontend skills like React.js, Redux, Redux Tool
-              Kit, Axios, Tailwind CSS, SaSS, Css3 and many more.
-            </p>
-            <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p>
-            <p>
-              In my spare time I create YouTube videos and write blogs on my Blog.
-              Where I talk about programming theory and build various projects.
-            </p>
-          </div>
+          <h3 className="font-bold  dark:text-white text-3xl text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50">
+                        {language === "en" ? aboutMeData.title_EN : aboutMeData.title}
+             </h3>
+
+        
+             <p  className="py-5 text-left text-gray-500 dark:text-white px-2">
+      {language === "en" ? aboutMeData.paragraphs[0].title_EN : aboutMeData.paragraphs[0].title}
+    </p>        
+          {aboutMeData.paragraphs.map((paragraph, index) => (
+           
+    <p key={index} className=" text-left text-gray-500 px-2 py-1 dark:text-white">
+      {language === "en" ? paragraph.description_EN : paragraph.description}
+    </p>
+  ))}
+          </div> 
           <div className="about-img">
             <img
-              src={myimage}
+              src={aboutImage}
               alt="coding illustration"
               className="lgw-[80%] md:ml-auto"
             />

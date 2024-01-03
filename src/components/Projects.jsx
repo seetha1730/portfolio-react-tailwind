@@ -18,28 +18,32 @@ import {projectsData} from "../assets/lib/data";
    const { language } = useLanguage();
 
     return (
-      <section className="bg-primary text-white px-5 py-32" id="projects">
-        <div className="projects  container mx-auto p-5 ">
-        <h2 className="font-bold mb-5  text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50"> My projects</h2>
+      <section className="bg-primary dark:bg-gray-500 text-white px-5 pt-20 md:pt-22" id="projects">
+        <div className="projects  container mx-auto">
+        <h2 className="font-bold mb-5  text-4xl text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50 dark:text-white "> My projects</h2>
 
- <div className="bg-gray-100 rounded-xl">
+ <div className="flex justify-center ">
 
         <Slider {...sliderSettings}>
         {projectsData.map((project, i) => {
     return (
         <div className="relative  p-10" key={i}>
             <div className="grid grid-cols-12 gap-3">
-            <div className="col-span-6 flex items-center">
-            <img className="col-span-5 " src={project.image} alt={project.title} />
+            <div className="col-span-12 md:col-span-6 flex items-center">
+            <img className="col-span-12 md:col-span-5 " src={project.image} alt={project.title} />
 
             </div>
-            <div className="col-span-6 px-5  ">
-                <p className="py-5 text-left text-gray-500 font-bold px-2 text-white">
-                    {project.description}
+            <div className="col-span-12 md:col-span-6 px-5  ">
+            <h3 className="font-bold dark:text-white  text-2xl dark:text-gray-700 text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50">
+                        {language === "en" ? project.title_EN : project.title}
+                      </h3>
+                <p className="py-5 text-left dark:text-gray-100 text-gray-500 font-bold px-2">
+                {language === "en" ? project.description_EN : project.description}
+
                 </p>
                 <div className="technologies">
-                <h3 className="font-bold   text-2xl text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50">
-                        {language === "nl" ? "Technologieën" : "Technologies"}
+                <h3 className="font-bold   text-2xl dark:text-white text-transparent bg-clip-text  bg-gradient-to-r from-teal-500 to-cyan-50">
+                        {language === "en" ? " Technologies ":"Technologieën" }
                       </h3>
                       <div className="grid grid-cols-6 gap-2 p-4">
                         {project.technologies.map(

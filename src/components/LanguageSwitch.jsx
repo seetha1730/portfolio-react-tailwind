@@ -17,7 +17,7 @@ const LanguageSwitch = () => {
                 <input type="checkbox" id="toggle-language"
 
                     onChange={toggleLanguage}
-                    checked={language === "en"} className=" dark:bg-none bg-gradient-to-r from-teal-500 to-cyan-500 appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-blue-500 bg-gray-500" />
+                    checked={language === "en"} className=" dark:bg-none bg-gradient-to-r from-teal-500 to-cyan-500 appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black bg-gray-500" />
                 <span className="absolute font-medium text-xs uppercase right-8 text-white"> NL </span>
                 <span className="absolute font-medium text-xs uppercase right-2 text-white"> EN </span>
 

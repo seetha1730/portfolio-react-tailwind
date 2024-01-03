@@ -10,23 +10,49 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .projects .slick-prev:before {
-  content: '←';
-  font-size: 35px;
-  color: #000;
+  font-size: 45px;
+  color: #1ABAA9;
   margin-left: -20px;
 }
+.projects .slick-prev{left:-9%}
+.projects .slick-next{right:-9%}
 .projects .slick-next:before {
-  font-size: 35px;
-  color: #000;
+  font-size: 45px;
+  color: #1abaa9;
   margin-right: 20px;
+}
+.dark .projects .slick-prev:before,.dark .projects .slick-next:before{
+  color: white;
+
+}
+.dark button.bg-gradient-to-r.from-teal-500.to-cyan-500{
+background:white;
+color:black
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 a{color:black}
-
+.projects .slick-dots li button:before,.projects .slick-dots li button{
+  font-size:15px
+ }
+ .projects .slick-slider.slick-initialized{
+   width:80%;
+   background: rgba(0, 0, 0, 0.1);
+   border-radius:12px
+ }
 
 input:checked ~ span:last-child {
   --tw-translate-x: 1.75rem; /* translate-x-7 */
+}
+@media only screen and (max-width: 1024px) {
+  .projects .slick-slider.slick-initialized{
+    width:90%
+  }
+  .projects .slick-prev{left:-2%}
+.projects .slick-next{right:-2%}
+
+.projects .slick-prev:before{margin-left:-15px;font-size: 35px;}
+.projects .slick-next:before{margin-right:-15px;font-size: 35px;}
 }
