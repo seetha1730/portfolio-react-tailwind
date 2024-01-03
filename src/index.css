@@ -56,6 +56,10 @@ input:checked ~ span:last-child {
 .projects .slick-prev:before{margin-left:-15px;font-size: 35px;}
 .projects .slick-next:before{margin-right:-15px;font-size: 35px;}
 }
+[type='checkbox']:checked{
+  background-color:  #1abaa9;
+  background-image: none;
+}
 @media only screen and (max-width: 767px) {
 .button-container{
   flex-direction: column;

@@ -18,7 +18,7 @@ const CustomNavLink = ({ link, children, linkEn, activeSection }) => {
       <>
       <li>
 
-        <Link activeClass="block cursor-pointer py-2 px-3 text-white bg-[#06A8BF] w-full rounded lg:bg-transparent lg:text-[#06A8BF] lg:p-0 dark:text-white dark:bg-gray-600" smooth spy
+        <Link activeClass="block cursor-pointer py-2 px-3 text-white bg-[#06A8BF] w-full rounded lg:dark:bg-transparent lg:bg-transparent lg:text-[#06A8BF] lg:p-0 dark:text-white dark:bg-gray-600" smooth spy
           to={link}
           aria-current="page"
           onMouseEnter={() => setIsHovered(true)}
@@ -71,7 +71,7 @@ const Header = () => {
 
     return (
 <>
-      <nav className=" border-gray-200 dark:bg-gray-900 fixed w-full bg-neutral-100 z-50">
+      <nav className=" px-5 border-gray-200 dark:bg-gray-900 fixed w-full bg-neutral-100 z-50">
       <div className=" container mx-auto">
         <div className=" flex flex-wrap items-center  lg:justify-between mx-auto p-1 grid grid-cols-12 ">
         
@@ -103,7 +103,7 @@ const Header = () => {
              {link[language]}
             </CustomNavLink>
           ))} 
-          <li > <a className="flex" href="/SeethaLakhsmi-FE-2024.pdf" >{language === "en" ? "Resume " : "CV " }<FiDownload className="ml-3 mt-1"/> </a></li>
+          <li > <a className="flex dark:text-white" href="/SeethaLakhsmi-FE-2024.pdf" >{language === "en" ? "Resume " : "CV " }<FiDownload className="ml-3 mt-1"/> </a></li>
 
             </ul>
         
