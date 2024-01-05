@@ -28,7 +28,7 @@ import adobecq5icon from "../../assets/icons/adobeCq5icon.svg"
 import posImage from "../../assets/img/pos.png"
 import chickEggimage from "../../assets/img/chick-egg.png"
 import quizImage from "../../assets/img/Interactive-quiz.png"
-import portfolioImage from "../../assets/img/Interactive-quiz.png"
+import portfolioImage from "../../assets/img/portfolio.png"
 import asian4fc from "../../assets/img/asian4fc.png"
 export const headerIntroData = {
   title: {
