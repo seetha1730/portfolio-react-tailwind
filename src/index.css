@@ -14,8 +14,8 @@ body {
   color: #1ABAA9;
   margin-left: -20px;
 }
-.projects .slick-prev{left:-9%}
-.projects .slick-next{right:-9%}
+.projects .slick-prev{left:-1%}
+.projects .slick-next{right:-1%}
 .projects .slick-next:before {
   font-size: 45px;
   color: #1abaa9;
