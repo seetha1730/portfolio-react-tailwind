@@ -279,36 +279,7 @@ export const projectsData = [
     ]
 
   },
-  {
-    title_EN: "GSK-sensodyne",
-    title:"",
-    description:
-      "Ik heb een online retailplatform voor Indiase boodschappen gemaakt met behulp van WordPress en WooCommerce. De verantwoordelijkheden omvatten het beheren van bestellingen, voorraad en het bezorgsysteem, waardoor een naadloze en efficiënte bedrijfsvoering werd gewaarborgd.",
-    description_EN:
-      "I created an online retail platform for Indian groceries using WordPress and WooCommerce. Responsibilities included managing orders, stock, and the delivery system, ensuring a seamless and efficient business operation.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "woocommerce", icon: woocommerceicon },
-      { name: "wordpress", icon: wordpressicon },
-     
-    ],
-    image:asian4fc,
-    buttons: [
-      {
-        name: "Live",
-        label: {
-          nl: "Live url",
-          en: "Live",
-        },
-        icon: FiLink,
-        color: "bg-gradient-to-r from-teal-500 to-cyan-500",
-      link:"http://asian4fc.com/"
-      },
-      
-    ]
-
-  },
+  
 ] 
 
 
@@ -462,12 +433,7 @@ export const navLinks = [
   { nl: "Projecten", en: "Projects", hash: "projects"},
   { nl: "Over mij", en: "About me", hash: "about-me" },
   { nl: "Contact", en: "Contact", hash: "contact" },
-  // { nl: "CV", en: "Resume", hash: "SeethaLakhsmi-FE-2024.pdf" },
-
 ] 
-
-
-
 
 export const sideBarLeftSocials = [
   {
@@ -486,10 +452,6 @@ export const sideBarLeftSocials = [
     altimgname: "mail",
   },
 ]
-
-
-
-
 export const aboutMeData = {
   title: "Over mij",
   title_EN: "About me",
