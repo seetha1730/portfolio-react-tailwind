@@ -91,7 +91,7 @@ const Header = () => {
               </svg>
           </button>
           </div>
-          <div className="hidden w-full col-span-12 lg:col-span-9 lg:block  " id="navbar-default">
+          <div className="hidden w-full col-span-12 lg:col-span-9 lg:block" id="navbar-default">
             <ul className="font-medium flex items-center flex-col justify-start p-4 lg:p-0 mt-4 border border-gray-500 rounded-lg  lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
             {navLinks.map((link) => (
             <CustomNavLink className="dark:text-white"
